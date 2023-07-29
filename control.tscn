@@ -1,0 +1,101 @@
+[gd_scene load_steps=14 format=3 uid="uid://exwjgyiqls5n"]
+
+[ext_resource type="Texture2D" uid="uid://dwb56kk3qucaq" path="res://texture/front_cover_bg.jpg" id="1_t0koo"]
+[ext_resource type="Texture2D" uid="uid://c5cren5p7tjrl" path="res://texture/activity_bar.png" id="2_x8ma0"]
+[ext_resource type="Texture2D" uid="uid://d23wwgnh4g1cj" path="res://texture/head_3.png" id="3_veh2m"]
+[ext_resource type="Texture2D" uid="uid://3abd1pjo5nw5" path="res://texture/bar_2.png" id="4_muaxa"]
+[ext_resource type="Texture2D" uid="uid://b0hi8miqm0tqi" path="res://texture/icon_big_1.png" id="5_sb0sc"]
+[ext_resource type="Texture2D" uid="uid://bitbsc4vjm1o5" path="res://texture/icon_big_3.png" id="6_iwv6e"]
+[ext_resource type="Texture2D" uid="uid://dufjtbhsn7h1b" path="res://texture/big_head_1.png" id="7_5br10"]
+[ext_resource type="Texture2D" uid="uid://bn8lroordayo7" path="res://texture/items_box_1.png" id="8_80w06"]
+[ext_resource type="Texture2D" uid="uid://cm6mte5xhy0v" path="res://texture/items_box_2.png" id="9_xao82"]
+[ext_resource type="Texture2D" uid="uid://cp0xylmeeavqf" path="res://texture/items_box_3.png" id="10_d3ga4"]
+[ext_resource type="Texture2D" uid="uid://bk4tjtvbgbeud" path="res://texture/items_box_5.png" id="11_x0hem"]
+[ext_resource type="Texture2D" uid="uid://bslxffwp1eaow" path="res://texture/items_box_6.png" id="12_535an"]
+[ext_resource type="Texture2D" uid="uid://d3qam3otx8r31" path="res://texture/items_box_4.png" id="13_5egl1"]
+
+[node name="Control" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="BG" type="TextureRect" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("1_t0koo")
+expand_mode = 1
+stretch_mode = 6
+
+[node name="NinePatchRect" type="NinePatchRect" parent="."]
+layout_mode = 1
+anchors_preset = 10
+anchor_right = 1.0
+offset_bottom = 93.0
+grow_horizontal = 2
+texture = ExtResource("2_x8ma0")
+
+[node name="Head3" type="Sprite2D" parent="."]
+position = Vector2(49, 44.125)
+scale = Vector2(1.11628, 1.07012)
+texture = ExtResource("3_veh2m")
+
+[node name="Bar2" type="Sprite2D" parent="."]
+position = Vector2(256, 45)
+texture = ExtResource("4_muaxa")
+
+[node name="Bar2" type="Sprite2D" parent="Bar2"]
+position = Vector2(230, 3)
+texture = ExtResource("4_muaxa")
+
+[node name="ButtonCrystallization1" type="Sprite2D" parent="."]
+position = Vector2(161, 40)
+scale = Vector2(0.676068, 0.733711)
+texture = ExtResource("5_sb0sc")
+
+[node name="IconBig3" type="Sprite2D" parent="."]
+position = Vector2(378.25, 44)
+scale = Vector2(0.802884, 0.804878)
+texture = ExtResource("6_iwv6e")
+
+[node name="BigHead1" type="Sprite2D" parent="."]
+position = Vector2(325, 495)
+texture = ExtResource("7_5br10")
+
+[node name="ItemsBox1" type="Sprite2D" parent="."]
+position = Vector2(77, 370)
+texture = ExtResource("8_80w06")
+
+[node name="ItemsBox2" type="Sprite2D" parent="."]
+position = Vector2(84, 540)
+texture = ExtResource("9_xao82")
+
+[node name="ItemsBox3" type="Sprite2D" parent="."]
+position = Vector2(86, 690)
+texture = ExtResource("10_d3ga4")
+
+[node name="ItemsBox5" type="Sprite2D" parent="."]
+position = Vector2(592, 541)
+texture = ExtResource("11_x0hem")
+
+[node name="ItemsBox6" type="Sprite2D" parent="."]
+position = Vector2(588, 694)
+texture = ExtResource("12_535an")
+
+[node name="ItemsBox4" type="Sprite2D" parent="."]
+position = Vector2(583, 374)
+texture = ExtResource("13_5egl1")
+
+[node name="Loading0" type="TextureProgressBar" parent="."]
+layout_mode = 0
+offset_left = 349.0
+offset_top = 811.0
+offset_right = 349.0
+offset_bottom = 811.0
+scale = Vector2(2.04688, 1.28571)
